@@ -1,6 +1,7 @@
 # Dependencies
-[Python 3.5+](https://www.python.org/) - Unless you use the binary release, you will be running a Python script, so this one is kinda obvious.
-[Pyperclip](https://pypi.org/project/pyperclip/) - Used to copy rules to the clipboard. If it isn't found, the program will execute normally but it won't copy the rules directly into the clipboard.
+These are not necessary if you are using the binary release.  
+[Python 3.5+](https://www.python.org/) - It's a Python script, so this one is kinda obvious.  
+[Pyperclip](https://pypi.org/project/pyperclip/) - Used to copy rules to the clipboard. If it isn't found, the program will execute normally but it won't copy the rules directly into the clipboard.  
 
 # Why this and not others
 While other scripting languages currently available and in-development focus on making scripting easier and cleaner, the focus of this pseudo-language is to give the user metaprogramming capabilities. This means that for small simple scripts, those other languages will be a better choice in terms of clarity and usability; in the case of larger scripts, especially those with similar patterns in the rules themselves, this language will provide you with tools for much greater abstraction and reduced repetition.  
@@ -212,7 +213,7 @@ Operator | Function
  --- | --- 
 `a & b` | `_and(a, b)`
 `~a` | `_not(a)`
-`a | b` | `_or(a, b)`
+`a \| b` | `_or(a, b)`
 `a ^ b` | `_and(_not(_and(self, other)), _or(self, other))`
 
 ### Mathematical operators
